@@ -1,0 +1,250 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #0804fd;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+  font-size: 0.9em;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+/* Estilo do formulário */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #0804fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+form button:hover {
+  background-color: #0603d1;
+}
+
+a {
+  color: #0804fd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0603d1;
+}
+
+/* Estilo do menu de cupcakes */
+.cupcake-item img {
+  width: 100%;  /* Faz a imagem ocupar 100% do seu contêiner */
+  height: auto;  /* Mantém a proporção da imagem */
+  max-width: 220px;  /* Limita a largura máxima para o tamanho desejado */
+  object-fit: cover;  /* Faz com que a imagem cubra o espaço sem distorcer */
+}
+
+.cupcake-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsivo e adequado ao tamanho */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cupcake-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  height: 100%; /* Para garantir que a altura das divs seja consistente */
+}
+
+.cupcake-item:hover {
+  transform: translateY(-5px);
+}
+
+.cupcake-item img {
+  width: 100%;
+  height: auto; /* Para garantir que as imagens fiquem proporcionais */
+  border-radius: 10px;
+}
+
+.cupcake-item h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.cupcake-item p {
+  font-size: 1.2em;
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.cupcake-item button {
+  background-color: #0804fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.cupcake-item button:hover {
+  background-color: #0603d1;
+}
+
+/* Estilo do carrinho */
+#cart {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  z-index: 10;
+}
+
+#cart h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+#cart-list {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#cart-total {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0804fd;
+}
+
+/* Estilo do checkout */
+.checkout-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.checkout-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.checkout-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.checkout-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.checkout-container button {
+  background-color: #0804fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkout-container button:hover {
+  background-color: #0603d1;
+}
+
+/* Estilo dos pedidos */
+.pedidos-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.pedidos-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.pedido-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.pedido-item p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
